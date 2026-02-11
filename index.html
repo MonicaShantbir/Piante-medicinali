@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piante Aromatiche - Casina RE - Gennaio 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌿 Inventario Piante Aromatiche</h1>
+        <p class="subtitle">Casina, Reggio Emilia - Gennaio 2026</p>
+        <p class="subtitle">Agricoltura Biodinamica e Fasi Lunari</p>
+    </header>
+
+    <main>
+        <!-- Moon Phase Section -->
+        <section id="moon-phase-section" class="card">
+            <h2>🌙 Fase Lunare Corrente</h2>
+            <div id="moon-display">
+                <div class="moon-info">
+                    <div id="moon-icon" class="moon-icon">🌕</div>
+                    <div>
+                        <p><strong>Fase:</strong> <span id="current-phase">Luna Piena</span></p>
+                        <p><strong>Data:</strong> <span id="current-date"></span></p>
+                        <p><strong>Raccomandazione:</strong> <span id="moon-recommendation"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar-section" class="card">
+            <h2>📅 Calendario Biodinamico - Gennaio 2026</h2>
+            <div id="calendar-container">
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <span class="legend-color new-moon"></span>
+                        <span>Luna Nuova - Semina radici</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color waxing-crescent"></span>
+                        <span>Luna Crescente - Semina foglie</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color full-moon"></span>
+                        <span>Luna Piena - Raccolta</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color waning-crescent"></span>
+                        <span>Luna Calante - Trapianto</span>
+                    </div>
+                </div>
+                <div id="calendar"></div>
+            </div>
+        </section>
+
+        <!-- Plants Inventory Section -->
+        <section id="plants-section" class="card">
+            <h2>🌱 Inventario Piante Aromatiche</h2>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Tutte</button>
+                <button class="filter-btn" data-filter="semina">Da Seminare</button>
+                <button class="filter-btn" data-filter="trapianto">Da Trapiantare</button>
+                <button class="filter-btn" data-filter="raccolto">Da Raccogliere</button>
+            </div>
+            <div id="plants-grid" class="plants-grid"></div>
+        </section>
+
+        <!-- Checklist Section -->
+        <section id="checklist-section" class="card">
+            <h2>✓ Checklist Attività</h2>
+            <div class="checklist-controls">
+                <input type="text" id="new-task-input" placeholder="Aggiungi nuova attività...">
+                <button id="add-task-btn">Aggiungi</button>
+            </div>
+            <div id="checklist-container"></div>
+        </section>
+
+        <!-- Biodynamic Info Section -->
+        <section id="info-section" class="card">
+            <h2>ℹ️ Agricoltura Biodinamica</h2>
+            <div class="info-content">
+                <h3>Principi dell'Agricoltura Biodinamica</h3>
+                <ul>
+                    <li><strong>Fasi Lunari:</strong> La luna influenza la crescita delle piante. Luna crescente favorisce lo sviluppo della parte aerea, luna calante favorisce le radici.</li>
+                    <li><strong>Giorni della Radice:</strong> Ideali per piantare e raccogliere ortaggi da radice come carote, rape, cipolle.</li>
+                    <li><strong>Giorni della Foglia:</strong> Migliori per verdure a foglia come basilico, prezzemolo, salvia.</li>
+                    <li><strong>Giorni del Fiore:</strong> Indicati per piante da fiore come calendula, camomilla.</li>
+                    <li><strong>Giorni del Frutto:</strong> Ottimali per pomodori, peperoni, frutti.</li>
+                </ul>
+                
+                <h3>Calendario Gennaio 2026</h3>
+                <ul>
+                    <li><strong>1-6 Gennaio:</strong> Luna Calante - Ideale per trapianto e lavori sul terreno</li>
+                    <li><strong>7 Gennaio:</strong> Luna Nuova - Inizio nuovo ciclo, semina radici</li>
+                    <li><strong>8-20 Gennaio:</strong> Luna Crescente - Semina foglie e fiori</li>
+                    <li><strong>21 Gennaio:</strong> Luna Piena - Raccolta massima vitalità</li>
+                    <li><strong>22-31 Gennaio:</strong> Luna Calante - Trapianto e preparazione terreno</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Inventario Piante Aromatiche - Casina RE</p>
+        <p>Seguendo i principi dell'agricoltura biodinamica</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
